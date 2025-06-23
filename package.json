@@ -3,6 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://Suhani3008.github.io/KindBite",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
