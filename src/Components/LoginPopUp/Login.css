@@ -1,0 +1,73 @@
+.Login-PopUp {
+    position: fixed; /* Ensure it covers the entire screen */
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: grid;
+}
+
+.loginContainer {
+    place-self: center;
+    width: max(30vw, 330px);
+    height: 460px;
+    color: #808080;
+    background-color: white; /* Changed to white for the login box */
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    z-index: 2; /* Ensure it stays above the overlay */
+}
+
+.loginTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black; /* Adjusted for visibility on a white background */
+}
+
+.login-input{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-input input{
+    outline: none;
+    border: 1px solid #c9c9c9;
+    color: black;
+    padding: 10px;
+    border-radius: 9px;
+}
+
+.loginContainer button{
+      border: none;
+      padding: 10px;
+      border-radius: 15px;
+      color: white;
+      background-color: rgb(39, 34, 34);
+      font-size: 15px;
+      cursor: pointer;
+}
+
+.login-condition{
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin-top: -15px;
+}
+
+.login-condition input{
+    margin-top: 5px;
+}
+
+.Login-PopUp span{
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+}

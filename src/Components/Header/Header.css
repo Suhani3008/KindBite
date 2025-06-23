@@ -1,0 +1,15 @@
+@media (max-width: 1200px) {
+  .header-contents {
+    max-width: 50%; /* Adjust width for medium screens */
+  }
+
+  .header-contents h2 {
+    font-size: 3rem; /* Reduce heading size */
+  }
+
+  .header-contents p {
+    display: none !important; /* Force hide the paragraph */
+    visibility: hidden; /* Ensure it's invisible */
+    height: 0; /* Remove its height just in case */
+  }
+}

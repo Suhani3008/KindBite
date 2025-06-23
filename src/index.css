@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
+}
+
+.fade-in {
+  animation: fadeIn 4s ease-in-out;
+}
+
+/* Custom styles for slick-prev and slick-next */
+/* Common styles for both prev and next buttons */
+.slick-prev, .slick-next {
+  z-index: 10; /* Make sure they appear on top */
+  background: rgba(255, 0, 0, 1); /* Solid red color */
+  border-radius: 50%; /* Circle shape */
+  width: 40px; /* Fixed size */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; /* Pointer cursor for better UI */
+}
+
+/* Remove default arrows */
+.slick-prev::before, .slick-next::before {
+  content: ''; /* No text or default icons */
+}
+
+/* Hover effect */
+.slick-prev:hover, .slick-next:hover {
+  background: rgba(200, 0, 0, 1); /* Slightly darker red on hover */
+}
+
+/* Positioning */
+.slick-prev {
+  left: -50px; /* Adjust as needed for spacing */
+}
+
+.slick-next {
+  right: -50px; /* Adjust as needed for spacing */
+}
+
+/* Arrow icon styles (SVGs from JSX) */
+.slick-prev svg, .slick-next svg {
+  color: white; /* White arrow color */
+  font-size: 24px; /* Arrow size */
+}
